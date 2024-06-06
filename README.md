@@ -8,17 +8,9 @@ The goal for this month's Developer Challenge is to help you getting started wit
 
 In order to complete each of the challenges, you need to:
 
-1. Look into the Challenges to see what the challenge is each week.
+1. Look into the Challenges to see what the challenge is each week published on Wednesdays during June 2024.
 2. Submit your solution to the corresponding thread in [SAP Community Application Development discussion](https://community.sap.com/t5/tag/devchallenge-hana-eda-submissions/tg-p/board-id/application-developmentforum-board).
 3. You can join the challenge and submit your solutions during any time of the month of June of 2024, but you need to complete challenges from previous weeks, if not done yet.
-
-## Setup for the challenge
-
-To be able to participate in this challenge, it's essential that you complete the following steps to satisfy [requirements](#requirements):
-
-### Software setup
-1. [Setup your SAP HANA database in SAP HANA Cloud trial](https://developers.sap.com/group.hana-cloud-get-started-1-trial.html). 
-   * Please note that it is recommended to use a **Trial** of SAP Business Technology Platform (aka SAP BTP), and not a **Free Tier** or your organization's account.
 
 ## Requirements
 
