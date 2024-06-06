@@ -1,14 +1,14 @@
 ## 1. Set up your SAP HANA database in SAP HANA Cloud trial
 
-Please note that it is recommended to use a Trial of the SAP Business Technology Platform (aka SAP BTP), and not a Free Tier or your organization's account, if you do not have it yet: https://developers.sap.com/group.hana-cloud-get-started-1-trial.html
+If you don't already have it, it's recommended to use a trial of the SAP Business Technology Platform (aka SAP BTP), not a Free Tier or your organization's account: https://developers.sap.com/group.hana-cloud-get-started-1-trial.html
 
-Make sure that you know your database's SQL endpoint and the DBAdmin's password.
+Make sure that you know your database's SQL endpoint and the **DBAdmin**'s password.
 
 ## 2. Open your SAP Business Application Studio
 
-If you are using the SAP BTP free trial, then open the SAP Business Application Studio trial from the "Quick Tool Access" section.
+If you are using the SAP BTP free trial, open the SAP Business Application Studio trial from the "Quick Tool Access" section.
 
-Should you have issues opening SAP Business Application Studio (for example when you have had the account for a long time), then check the steps in this tutorial - Set Up SAP Business Application Studio for Development.
+If you have issues opening SAP Business Application Studio (for example, if you've had the account for a long time), check the steps in this tutorial: [Set Up SAP Business Application Studio for Development](https://developers.sap.com/tutorials/appstudio-onboarding.html).
 
 ## 3. Create a new Dev Space for the developer challenge
 

@@ -1,6 +1,6 @@
 # SAP Community Developer Challenge: SAP HANA multi-model with Python and SAP Business Application Studio
 
-This repository is a starting point of the **SAP Community Code Challenge for **SAP HANA Multi-model** (see [the corresponding post](..)).
+This repository is a starting point of the Developer Challenge for **SAP HANA Multi-model** (see [the corresponding post](..)).
 
 The goal for this month's Developer Challenge is to help you getting started with fundamentals of the [SAP Business Application Studio with Python]() and some multi-model capabilities of [SAP HANA Cloud](https://help.sap.com/docs/hana-cloud-database?version=2024_1_QRC).
 
