@@ -128,9 +128,11 @@ Check that user credentials are correct by connecting to the database to run a s
 
 ## 8. Create the `DevChallenger` user in your database instance in the SAP HANA Cloud Trial
 
-``sh
+Use SAP HANA CLI `hdbsql` to connect using your `myDBAdmin` user key from the local secure store.
+
+```sh
 ~/sap/hdbclient/hdbsql -U myDBAdmin
-``
+```
 
 Switch the input to multiline SQL statements separated with `;` by default.
 
