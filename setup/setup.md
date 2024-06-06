@@ -12,25 +12,25 @@ If you have issues opening SAP Business Application Studio (for example, if you'
 
 ## 3. Create a new Dev Space for the developer challenge
 
-Go to your instance of SAP Business Application Studio (further referred to as "BAS").
+Go to your instance of SAP Business Application Studio (referred to as "BAS" from here on).
 
-For this exercise create a new Dev Space called `DevChallengeHANA24` of a kind **Basic** in BAS:
+For this exercise, create a new Dev Space called `DevChallengeHANA24` of a kind **Basic** in BAS:
 
 ![](resources/030_DevChallengeHANA24.png)
 
-Open the dev space once it is in the state "Running".
+Open the dev space once it is in the "Running" state.
 
-Close the Get Started tab if it opens.
+Close the **Get Started** tab if it opens.
 
 ![](resources/032_CloseGetStarted.png)
 
 ## 4. Import the profile with the required extensions
 
-You want to customize extensions used in SAP BAS. By default it contains many extensions you will not need. At the same time, you need some extensions specific to working with Python and Jupyter notebooks.
+Customize the extensions used in SAP BAS. By default, it contains many extensions you won't need. However, you need some specific extensions for working with Python and Jupyter notebooks.
 
 ![](resources/040_importProfile.png)
 
-Import the profile `HANAwPy` from the gist: https://gist.github.com/Sygyzmundovych/1938132cf5810680c25f675fe3810630
+Import the profile `HANAwPy` from this gist: https://gist.github.com/Sygyzmundovych/1938132cf5810680c25f675fe3810630
 
 ![](resources/041_gist.png)
 
@@ -42,19 +42,19 @@ Create the profile only using Extensions and Code snippets...
 
 ![](resources/043_HANAwPy_Active.png)
 
-You should see fewer icons in the Activity Bar. When you click on the Extensions icon in the Activity Bar, you should see extensions like **Jupyter** and **Python** in the folder "DEV SPACE - INSTALLED."
+You should see fewer icons in the Activity Bar. When you click on the Extensions icon in the Activity Bar, you should see extensions like **Jupyter** and **Python** in the "DEV SPACE - INSTALLED" folder.
 
-As well the icon of the profile should change to the icon with a snake.
+Also, the profile icon should change to one with a snake.
 
 ## 5. Open the Terminal
 
-Even though we'll use Jupyter Notebooks in the exercises, for this setup exercise, we'll stick solely to the terminal.
+Even though you'll use Jupyter Notebooks in the later exercises, for this setup exercise, you'll stick solely to the terminal.
 
 Open it from the hamburger menu:
 
 ![](resources/050_OpenTerminal.png)
 
-Run a few commands in the terminal to explore the setup:
+Run a few commands in the terminal to explore the configuration:
 
 ```sh
 whoami
@@ -81,11 +81,11 @@ locale
 
 ## 6. Install SAP HANA Client in the dev space
 
-SAP Development Tools https://tools.hana.ondemand.com/#hanatools gives you access to the SAP HANA Client, which developers can use to connect client applications to SAP HANA databases.
+SAP Development Tools https://tools.hana.ondemand.com/#hanatools give you access to the SAP HANA Client, which developers can use to connect client applications to SAP HANA databases.
 
-You need to agree to the SAP developer license https://tools.hana.ondemand.com/developer-license-3_2.txt to use these tools.
+You need to agree to the SAP developer license https://tools.hana.ondemand.com/developer-license-3_2.txt to use these tools.
 
-Download the SAP HANA Client installer to your BAS Dev Space using the following commands in the terminal.
+Download the SAP HANA Client installer to your Dev Space in BAS using the following commands in the terminal.
 
 ```sh
 wget --no-cookies --header "Cookie: eula_3_2_agreed=tools.hana.ondemand.com/developer-license-3_2.txt" "https://tools.hana.ondemand.com/additional/hanaclient-latest-linux-x64.tar.gz" -O /tmp/hanaclient-latest.tar.gz
@@ -107,14 +107,14 @@ Note that the client has been installed in `~/sap/hdbclient` by default because 
 
 ## 7. Use the HANA Client user store to store DBAdmin credentials
 
-Check the SQL endpoint of your SAP HANA database. 
+Check and note the SQL endpoint of your SAP HANA database.
 
 ![](resources/071_checkSQLendpoint.png)
 
-In the example below, it is `81095c17-3e52-424f-8924-b5e09da9a80a.hana.trial-us10.hanacloud.ondemand.com:443`. When creating a key `myDBAdmin` to store the credentials of your database administrator user, make sure to replace it with the value of the SQL endpoint of your own database.
+In the example below, it is `81095c17-3e52-424f-8924-b5e09da9a80a.hana.trial-us10.hanacloud.ondemand.com:443`. When creating a key `myDBAdmin` to store the credentials of your database administrator user, make sure to replace `${sap_hana_db_endpoint}` with the value of the SQL endpoint of your own database.
 
 ```shell
-~/sap/hdbclient/hdbuserstore -i SET myDBAdmin 81095c17-3e52-424f-8924-b5e09da9a80a.hana.trial-us10.hanacloud.ondemand.com:443 DBAdmin
+~/sap/hdbclient/hdbuserstore -i SET myDBAdmin ${sap_hana_db_endpoint} DBAdmin
 ~/sap/hdbclient/hdbuserstore LIST
 ```
 
@@ -140,7 +140,7 @@ Switch the input to multiline SQL statements separated with `;` by default.
 \pager OFF
 ```
 
-Execute SQL statement to create a user `DEVCHALLENGER` (with a password `Up2TheChallenge!Iam` in the example below).
+Execute SQL statements to create a user `DEVCHALLENGER` (with a password `Up2TheChallenge!Iam` in the example below).
 
 ```SQL
 CREATE USER DevChallenger 
@@ -148,7 +148,7 @@ PASSWORD "Up2TheChallenge!Iam" --replace this with your password of choice!
 NO FORCE_FIRST_PASSWORD_CHANGE;
 ```
 
-Execute the SQL statement to grant a role `AFL__SYS_AFL_AFLPAL_EXECUTE` to the user `DEVCHALLENGER`.
+Execute SQL statements to grant a role `AFL__SYS_AFL_AFLPAL_EXECUTE` to the user `DEVCHALLENGER`.
 
 ```SQL
 GRANT AFL__SYS_AFL_AFLPAL_EXECUTE TO DevChallenger;
