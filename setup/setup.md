@@ -168,6 +168,12 @@ Quit the `hdbsql` utility.
 
 ![](resources/080_createDevChallenger.png)
 
+## 9. Use the HANA Client user store to store DevChallenger credentials
+
+Store the credentials of the DevChallenger user in the HANA Client user store similarly to what you did for the user DBAdmin, but now using the key `myDevChallenger`.
+
+![](resources/090_setDevChallenger.png)
+
 ## 10. Create a Python virtual environment `.venv`...
 
 ...and activate it.
