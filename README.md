@@ -1,8 +1,8 @@
 # SAP Community Developer Challenge: SAP HANA multi-model with Python and SAP Business Application Studio
 
-This repository is a starting point of the Developer Challenge for **SAP HANA Multi-model**. See [the corresponding post](https://community.sap.com/t5/application-development-blog-posts/sap-developer-challenge-sap-hana-multi-model-using-python-in-sap-business/ba-p/13722560).
+This repository is a starting point of the Developer Challenge for **SAP HANA Multi-model**. See the corresponding post: https://community.sap.com/t5/application-development-blog-posts/sap-developer-challenge-sap-hana-multi-model-using-python-in-sap-business/ba-p/13722560.
 
-The goal for this month's Developer Challenge is to help you getting started with fundamentals of the [SAP Business Application Studio with Python]() and some multi-model capabilities of [SAP HANA Cloud](https://help.sap.com/docs/hana-cloud-database?version=2024_1_QRC).
+The goal for this month's Developer Challenge is to help you getting started with fundamentals of the [SAP Business Application Studio with Python](https://help.sap.com/docs/bas/sap-business-application-studio/runtime-version-management?q=python) and some multi-model capabilities of [SAP HANA Cloud](https://help.sap.com/docs/hana-cloud-database?version=2024_1_QRC).
 
 ## Participation
 
@@ -11,6 +11,12 @@ In order to complete each of the challenges, you need to:
 1. Look into the Challenges to see what the challenge is each week published on Wednesdays during June 2024.
 2. Submit your solution to the corresponding thread in [SAP Community Application Development discussion](https://community.sap.com/t5/tag/devchallenge-hana-eda-submissions/tg-p/board-id/application-developmentforum-board).
 3. You can join the challenge and submit your solutions during any time of the month of June of 2024, but you need to complete challenges from previous weeks, if not done yet.
+
+## Challenges
+
+### Week 1 (starts on 2024-06-05)
+
+This week's challenge is about you [getting everything set up](setup/setup.md) and working! 
 
 ## Requirements
 
